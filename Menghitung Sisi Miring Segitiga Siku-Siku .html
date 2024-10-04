@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisi Miring Segitiga Siku-Siku</title>
+</head>
+<body>
+    <h1>Menghitung Sisi Miring Segitiga Siku-Siku</h1>
+    <p>Alas: 4 cm</p>
+    <p>Tinggi: 5 cm</p>
+    <button onclick="hitungSisiMiring()">Hitung Sisi Miring</button>
+    <p id="sisiMiring"></p>
+
+    <script>
+        function hitungSisiMiring() {
+            var alas = 4;
+            var tinggi = 5;
+            var sisiMiring = Math.sqrt(Math.pow(alas, 2) + Math.pow(tinggi, 2));
+            document.getElementById("sisiMiring").innerHTML = "Sisi miring: " + sisiMiring.toFixed(2) + " cm";
+        }
+    </script>
+</body>
+</html>

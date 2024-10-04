@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Bola</title>
+</head>
+<body>
+    <h1>Menghitung Volume Bola</h1>
+    <p>Diameter: 15 cm</p>
+    <button onclick="hitungVolumeBola()">Hitung Volume</button>
+    <p id="volume"></p>
+
+    <script>
+        function hitungVolumeBola() {
+            var diameter = 15;
+            var jariJari = diameter / 2;
+            var volume = (4 / 3) * Math.PI * Math.pow(jariJari, 3);
+            document.getElementById("volume").innerHTML = "Volume bola: " + volume.toFixed(2) + " cm³";
+        }
+    </script>
+</body>
+</html>
