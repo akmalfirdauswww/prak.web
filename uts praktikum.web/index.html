@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>E-commerce App</h1>
+  
+  <!-- Halaman Daftar Produk -->
+  <section id="product-list">
+    <h2>Daftar Produk</h2>
+    <div class="product" data-id="1" data-name="Sepatu Nike" data-price="250000">
+      <img src="https://v3.ncrsport.com/storage/article/large/DD1391-100-1.jpg" alt="Sepatu Nike">
+      <h3>Sepatu Nike</h3>
+      <p>Harga: Rp 250,000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+    <div class="product" data-id="2" data-name="Sendal Nike" data-price="75000">
+      <img src="https://dynamic.zacdn.com/Lik0ELItjdss9Kx3NR4GPCGonNU=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/nike-1956-3223252-3.jpg" alt="Sendal Nike">
+      <h3>Sendal Nike</h3>
+      <p>Harga: Rp 75,000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+    <div class="product" data-id="3" data-name="Kaos Kaki Nike" data-price="50000">
+      <img src="https://down-id.img.susercontent.com/file/551e31819a58daa37c3c3d0e98ddef25@resize_w900_nl.webp" alt="Kaos Kaki Nike">
+      <h3>Kaos Kaki Nike</h3>
+      <p>Harga: Rp 50,000</p>
+      <button class="add-to-cart">Tambah ke Keranjang</button>
+    </div>
+  </section>
+
+  <!-- Halaman Keranjang -->
+  <section id="cart">
+    <h2>Keranjang Belanja</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nama Produk</th>
+          <th>Harga</th>
+          <th>Jumlah</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Item keranjang akan ditambahkan di sini -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Halaman Checkout -->
+  <section id="checkout">
+    <h2>Checkout</h2>
+    <p>Total Harga: <span id="total-price">Rp 0</span></p>
+  
+    <!-- Tambahkan metode pembayaran -->
+    <h3>Pilih Metode Pembayaran</h3>
+    <form id="payment-method-form">
+      <label>
+        <input type="radio" name="payment-method" value="Transfer Bank" checked>
+        Transfer Bank
+      </label><br>
+      <label>
+        <input type="radio" name="payment-method" value="Kartu Kredit">
+        Kartu Kredit
+      </label><br>
+      <label>
+        <input type="radio" name="payment-method" value="E-Wallet">
+        E-Wallet (Gopay, OVO, dll.)
+      </label>
+    </form>
+  
+    <button id="checkout-button">Bayar</button>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
